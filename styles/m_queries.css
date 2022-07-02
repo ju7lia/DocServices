@@ -84,7 +84,7 @@
 } 
 @media screen and (max-width: 550px) {
     body {
-        background-position: calc(20% + 100px);
+        background-position: calc(35% + 100px);
     }
     #logo {
         width: 30px;
