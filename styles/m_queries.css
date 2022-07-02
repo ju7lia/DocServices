@@ -1,0 +1,116 @@
+@media screen and (max-width: 900px) {
+    header {
+        background-color: rgb(85, 84, 84);
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 0vh;
+        top: 125px;
+        right: 0;
+        margin: 0;
+        overflow-y: hidden;
+        padding-top: 20vh;
+        visibility: hidden; 
+        transition: 0.5s;
+        z-index: 10000;
+    }
+    nav.active .menu {
+        background-color: rgb(85, 84, 84);
+        height: 100vh;
+        visibility: visible;
+    }
+    .menu li {
+        margin-bottom: 30px;
+    }
+
+    #btn_mobile {
+        display: flex;
+        margin: 10px;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        gap: .5rem;
+    }
+    #hamburguer {
+        width: 20px;
+        border-top: 2.2px solid #8f8989;
+        
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        position: relative;
+        content: '';
+        margin-top: 5px;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: #8f8989;
+        transition: .3s all;
+    }
+    nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    nav.active #hamburguer::after {
+        transform: rotate(135deg);
+    }
+    nav.active #hamburguer::before {
+        transform: rotate(-135deg);
+        top: 7px;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+    .menu1 {
+        display: flex;
+        justify-content: center;
+    }
+   
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+    .squares {
+        margin: 20px 10px;
+    }
+
+} 
+@media screen and (max-width: 550px) {
+    #logo {
+        width: 30px;
+    }
+    .subheader {
+        width: 100%;
+        flex-direction: row;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .logo h1 {
+        font-size: 20px;
+    }
+    #logo {
+        width: 90px;
+    }
+    .tmain {
+        max-width: 300px;
+    }
+    .lmain {
+        display: flex;
+        flex-direction: column;
+    }
+    .lmain a {
+        margin-bottom: 15px;
+    }
+    .end {
+        margin: auto 15px;
+    }
+
+}
